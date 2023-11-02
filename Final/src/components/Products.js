@@ -34,7 +34,7 @@ function Product() {
     else{
       setfilteredData(
         data.filter((value)=>{
-    return value.product_name.includes(val)})
+    return value.prodname.includes(val)})
       )
     }
   }

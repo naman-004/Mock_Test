@@ -40,11 +40,11 @@ function Update_product() {
             Field
             <select id="inputState" onChange={(e) => setcategory(e.target.value)} class="form-control" required>
               <option selected>Choose...</option>
-              <option value="Product_name">Product name</option>
-              <option value="ProdCat">Product Category</option>
-              <option value="Product_cost">cost</option>
-              <option value="Product_Desc">Description</option>
-              <option value="is_active">Active/Inactive</option>
+              <option value="prodname">Product name</option>
+              <option value="prodcat">Product Category</option>
+              <option value="cost">cost</option>
+              <option value="description">Description</option>
+              <option value="isactive">Active/Inactive</option>
             </select>
           </div>
         </div>

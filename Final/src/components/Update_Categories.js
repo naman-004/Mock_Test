@@ -29,7 +29,7 @@ function Update_Category() {
       Field
       <select id="inputState" onChange={(e)=>setcategory(e.target.value)} class="form-control" required>
         <option selected>Choose</option>
-        <option value="cat_name">Category</option>
+        <option value="name">Category</option>
         <option value="isactive">Active/Inactive</option>
         <option value="description">Description</option>
       </select>

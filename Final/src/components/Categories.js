@@ -26,7 +26,7 @@ function Category() {
     else{
       setfilteredData(
         data.filter((value)=>{
-    return value.cat_name.includes(val)})
+    return value.name.includes(val)})
       )
     }
   }
