@@ -44,7 +44,7 @@ function ProductForm() {
         type="text"
         placeholder="product name"
         value={ProductName} setProductCat
-        onChange={(e) => setProductName(e.target.value)} required />
+        onChange={(e) => setProductName(e.target.value)} required /><br></br>
       categories
       {category.map((catdata) => {
         return (<li><input type='checkbox' onChange={(e) => {
@@ -65,10 +65,10 @@ function ProductForm() {
                     return(<option value={catdata.category_id}>{catdata.cat_name}</option>)
                 })}
         </select> */}
-      cost<input type="number" class="form-control" value={ProductCost} onChange={(e) => setProductCost(e.target.value)} required />
-      Active<input class="form-check-input" value='1' onChange={(e) => { setisActive(e.target.value) }} type="radio" name="RadioDefault" required />
-      Inactive<input class="form-check-input" value='0' onChange={(e) => { setisActive(e.target.value) }} type="radio" name="RadioDefault" required />
-      description<input type="text" class="form-control" value={ProductDesc} onChange={(e) => setProductDesc(e.target.value)} placeholder="Descr" required />
+      cost<input type="number" class="form-control" value={ProductCost} onChange={(e) => setProductCost(e.target.value)} required /><br></br>
+      isActive:-Active<input class="form-check-input" value='1' onChange={(e) => { setisActive(e.target.value) }} type="radio" name="RadioDefault" required />
+      Inactive<input class="form-check-input" value='0' onChange={(e) => { setisActive(e.target.value) }} type="radio" name="RadioDefault" required /><br></br>
+      description<input type="text" class="form-control" value={ProductDesc} onChange={(e) => setProductDesc(e.target.value)} placeholder="Descr" required /><br></br>
       <button type="submit">Save</button>
     </form>
   );

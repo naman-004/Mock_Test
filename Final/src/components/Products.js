@@ -49,7 +49,7 @@ function Product() {
     Search Product Name : <input type="text" onChange={(e)=>{filter(e.target.value)}} placeholder="Search.."></input>
     </div>
     <button type="button" className='btn-dark bg-dark text-white'><Link to="/product/create">Add New</Link></button>
-      <table className="table table-hover">
+      <table className="table table-hover" >
         <thead className="thead-dark">
           <tr>
             <th scope="col">No.</th>

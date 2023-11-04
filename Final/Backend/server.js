@@ -153,18 +153,7 @@ app.delete("/DeleteCategory/:id",  (req,res) => {
         cat.map((d)=>{
         category=d.prodcat
         console.log(d,category,id)
-        if(category.length===1){
-            if(category[0]===id){
-                pool.query(`DELETE FROM product WHERE id=${d.id}`, (err,result) => {
-                    if(err){
-                        throw err
-                    }
-                    
-                })
-            }
-            
-        }
-        else if(category.length>0){
+        if(category.length>0){
             if(category.includes(id)){
                 let filteredProdCat='{"'
                 if(category.length===1){
